@@ -2,7 +2,8 @@
   "compilerOptions": {
     "module": "commonjs",
     "target": "ES2015",
-    "strict": true
+    "strict": true,
+    "noImplicitAny": false
   },
   "include": ["index.ts"],
   "exclude": ["node_modules"]
