@@ -80,7 +80,7 @@ const getHashforBlock = (aBlock: Block): string =>
 
 // 블록에 대한 유효성 판단
 const isBlockValid = (candidateBlock: Block, previousBlock: Block): boolean => {
-  if (Block.validateStructure(candidateBlock)) {
+  if (!Block.validateStructure(candidateBlock)) {
     return false;
   } else if (previousBlock.index + 1 !== candidateBlock.index) {
     return false;
