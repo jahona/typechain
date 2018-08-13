@@ -5,7 +5,11 @@
   "author": "jahona <jahona5240@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \"node dist/index.js\""
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsc-watch": "^1.0.26",
+    "typescript": "^3.0.1"
   }
 }
